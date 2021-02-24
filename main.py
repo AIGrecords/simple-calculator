@@ -38,10 +38,13 @@ if __name__ == "__main__":
   button2.grid(row=2, column=1)
   
   button3 = Button(gui, text='3', fg = "black", bg = "white", command=lambda: press(3), height=1, width=7)
-  button3.grid(row=3, column=1)
+  button3.grid(row=2, column=2)
       
+  button4 = Button(gui, text='4', fg = "black", bg = "white", command=lambda: press(4), height=1, width=7)
+  button4.grid(row=3, column=0)
       
-      
+  button5 = Button(gui, text='5', fg = "black", bg = 'white', command=lambda: press(5), height=1, width=7)
+  button5.grid(row=3, column=1)
       
       
     gui.mainloop()
