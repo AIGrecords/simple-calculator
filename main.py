@@ -31,8 +31,14 @@ if __name__ == "__main__":
   expression_field = Entry(gui, textvariable=equation)
   expression_field.grid(columnspan=4, ipadx=70)
   
-  button1 = Button(gui, text='1', fg)
+  button1 = Button(gui, text='1', fg = "black", bg = "white", command=lambda: press(1), height=1, width=7)
+  button1.grid(row=2, column=0)
   
+  button2 = Button(gui, text='2', fg = "black", bg = "white", command=lambda: press(2), height=1, width=7)
+  button2.grid(row=2, column=1)
+  
+  button3 = Button(gui, text='3', fg = "black", bg = "white", command=lambda: press(3), height=1, width=7)
+  button3.grid(row=3, column=1)
       
       
       
